@@ -22,9 +22,7 @@ contract Arceus is ERC721 {
     }
 
     // This function allows anyone to retrieve the metadata (URI) for a specific token by providing its token ID.
-    function tokenURI(
-        uint256 tokenId
-    ) public view override returns (string memory) {
+    function tokenURI(uint256 tokenId) public view override returns (string memory) {
         return s_tokenIdtoUri[tokenId];
     }
 }
