@@ -1,0 +1,23 @@
+ {
+    "attributes": [
+      {
+        "trait_type": "Type",
+        "value": "Normal"
+      },
+      {
+        "trait_type": "Power",
+        "value": "1000"
+      },
+      {
+        "trait_type": "Special Move",
+        "value": "Judgment"
+      },
+      {
+        "trait_type": "Rarity",
+        "value": "Legendary"
+      }
+    ],
+    "description": "The god of Pokémon, Arceus is the strongest Pokémon in existence.",
+    "image": "https://ipfs.io/ipfs/QmYBaCNqvgQBEyUEvCLnED7mangWiSERxpJ2HhxMhxSKkG/",
+    "name": "Arceus #1"
+  }
