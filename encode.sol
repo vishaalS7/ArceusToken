@@ -55,5 +55,25 @@ function multiDecodePacked() public pure returns (string memory, string memory){
     string memory someString = abi.decode(multiEncodePacked(), (string));
     return someString;
 }
+/***call:** How we call functions to change the state of the blockchain
+
+**staticcall:** How we call view or pure functions
+
+> **PROTIP** > `send` and `delegatecall` also exist as options for low-level calling to the blockchain, but we'll go over these in greater detail later!
+
+When we write `recentWinner.call{value: address(this).balance}("");` we're directly updating the value property of the transaction we're sending. The parenthesis at the end of this call are where we provide our transaction data.
+
+* within `{}` we're able to pass specific fields of a transaction, like `value`
+* within `()` we can pass the data needed to call a specific function.
+
+###
+*/
+function withdraw(address recentWinner) public { //recentWinner: This is the address to which we're going to send the contract’s entire balance. It's passed as a parameter to the function.
+    (bool success, ) = recentWinner.call{value: address(this).balance}("");
+    require(success, "Transfer Failed");
+}
+//{value: address(this).balance}: This specifies how much Ether to send. In this case, it’s the entire balance of the contract (address(this).balance).
+//(""): The empty parentheses mean that we're not sending any extra data, which would normally be used to call a specific function on a contract. Since we're just sending Ether, there's no need to provide function data.
+//
 
 }
