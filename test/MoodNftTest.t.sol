@@ -1,12 +1,12 @@
 // SPDX-License-Identifier: MIT
 
-pragma solidity ^0.8.19;
+pragma solidity ^0.8.26;
 
 import {DeployMoodNft} from "../script/DeployMoodNft.s.sol";
 import {MoodNft} from "../src/MoodNft.sol";
 import {Test, console} from "forge-std/Test.sol";
 import {Vm} from "forge-std/Vm.sol";
-import {MintBasicNft} from "../script/Interactions.s.sol";
+import {MintArceus} from "../script/Interactions.s.sol";
 import {ZkSyncChainChecker} from "lib/foundry-devops/src/ZkSyncChainChecker.sol";
 import {FoundryZkSyncChecker} from "lib/foundry-devops/src/FoundryZkSyncChecker.sol";
 
