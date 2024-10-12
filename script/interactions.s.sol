@@ -4,7 +4,7 @@ pragma solidity ^0.8.26;
 import {Script} from "forge-std/Script.sol";
 import {DevOpsTools} from "../lib/foundry-devops/src/DevOpsTools.sol";
 import {Arceus} from "../src/ArceusToken.sol";
-import {MoodNft} from "../src/MoodNft.sol";
+import {MoodNft} from "../src/moodNft.sol";
 
 contract MintArceus is Script {
     // string public constant ARCEUS = "ipfs://QmTBFsx7YWsaPnH9QqVz9zvr5y1iY6zccQGGuseFbVXFSj/?filename=Arceus.json";
