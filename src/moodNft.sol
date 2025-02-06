@@ -68,7 +68,7 @@ contract MoodNft is ERC721, Ownable {
             s_tokenIdToState[tokenId] = NFTState.HAPPY;
         }
     }
-
+//  which indicates that the NFT's metadata will be stored directly within the blockchain rather than being hosted externally
     function _baseURI() internal pure override returns (string memory) {
         return "data:application/json;base64,";
     }
